@@ -26,6 +26,9 @@ Overriding components with your own Tailwind classes is as easy as adding a clas
 - [x] ~Github~
 - [ ] Instagram
 
+### Misc
+- [ ] Integrate [Changeset](https://pnpm.io/using-changesets)
+
 ## Installation
 
 To install Svelte Auth UI, run the following command:

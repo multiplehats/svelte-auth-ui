@@ -1,7 +1,7 @@
 <script lang="ts">
 	import { HighlightSvelte } from 'svelte-highlight';
 	import atomOneDark from 'svelte-highlight/styles/atom-one-dark';
-	import { ProviderSchema, type Provider } from '$lib/types';
+	import { Provider, type ProviderType } from '$lib/types';
 	import { pkgName, projectName, projectDesc } from '$components/docs/constants';
 	import toast from 'svelte-french-toast';
 	import Button from '$lib/login-button/LoginButton.svelte';
@@ -14,7 +14,7 @@
 	let code = '';
 
 	// Button props.
-	let provider: Provider = 'google';
+	let provider: ProviderType = 'google';
 	let loading = false;
 	let withClickeHandler = false;
 	let withLoader = false;
@@ -67,9 +67,9 @@
 
 				<Select
 					label="Provider"
-					options={Object.entries(ProviderSchema.enum).map(([key, value]) => ({
+					options={Object.entries(Provider).map(([_, value]) => ({
 						label: value,
-						value: key
+						value: value
 					}))}
 					bind:value={provider}
 				/>
@@ -79,7 +79,6 @@
 				<Toggle bind:checked={withClickeHandler} label="With click handler" />
 				<Toggle bind:checked={disabled} label="Disabled" />
 				<Toggle bind:checked={icon} label="Icon" />
-
 				<Input label="Override label" bind:value={label} />
 			</div>
 		</aside>

@@ -1,7 +1,7 @@
 <script lang="ts">
 	import type { SvelteComponent } from 'svelte';
 	import { cn } from '$lib/utils/cn';
-	import { ButtonPropsSchema, type Provider } from '$lib/types';
+	import type { ProviderType } from '$lib/types';
 	import Pulse from '$lib/pulse/Pulse.svelte';
 
 	import Pinterest from '$lib/icons/Pinterest.svelte';
@@ -13,7 +13,7 @@
 	/**
 	 * The provider to use for the button.
 	 */
-	export let provider: Provider;
+	export let provider: ProviderType;
 
 	/**
 	 * Pass a valid Svelte component to override the default icon. Pass `null` to remove the icon.
@@ -36,11 +36,6 @@
 	 * Whether to show a loader inside the button when `loading` or `disabled` is true.
 	 */
 	export let withLoader = false;
-
-	ButtonPropsSchema.parse({
-		provider,
-		label
-	});
 
 	const busyClass = 'opacity-75 cursor-not-allowed';
 
@@ -66,7 +61,7 @@
 	class={cn(
 		'inline-flex items-center bg-white justify-center font-semibold tracking-wide h-12 rounded-full text-center text-gray-700 border border-gray-200 px-4 py-2 transition duration-30 text-sm sm:text-base hover:border-gray-300 focus:bg-gray-50 active:bg-gray-100 outline-none focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2',
 		loading || disabled ? busyClass : '',
-		$$props.class
+		$$restProps.class
 	)}
 	{...$$restProps}
 	disabled={disabled || loading}
