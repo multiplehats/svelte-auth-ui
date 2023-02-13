@@ -1,5 +1,10 @@
 # Svelte Auth UI
 
+[![npm version](https://badgen.net/npm/v/svelte-auth-ui)](https://www.npmjs.com/package/svelte-auth-ui)
+[![npm downloads](https://badgen.net/npm/dw/svelte-auth-ui)](https://www.npmjs.com/package/svelte-auth-ui)
+[![npm downloads](https://badgen.net/npm/dt/svelte-auth-ui)](https://www.npmjs.com/package/svelte-auth-ui)
+[![license](https://badgen.net/npm/license/svelte-auth-ui)](https://github.com/multiplehats/svelte-auth-ui/blob/main/LICENSE)
+
 Svelte Auth UI is a set of authentication components for [Svelte](https://svelte.dev/). These components are designed to simplify implementing authentication in your Svelte app.
 
 👉 [View live demo](https://svelte-auth-ui.vercel.app/)

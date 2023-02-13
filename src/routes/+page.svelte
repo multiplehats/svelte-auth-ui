@@ -10,6 +10,9 @@
 	import Simulatebutton from '$components/docs/Simulatebutton.svelte';
 	import Toggle from '$components/docs/Toggle.svelte';
 	import Copy from '$components/docs/icons/Copy.svelte';
+	import Github from '$lib/icons/Github.svelte';
+	import Twitter from '$lib/icons/Twitter.svelte';
+	import Npm from '$components/docs/icons/Npm.svelte';
 
 	let code = '';
 
@@ -44,7 +47,7 @@
 	{@html atomOneDark}
 </svelte:head>
 
-<main class="mx-auto max-w-7xl pb-10 lg:py-12 lg:px-8">
+<main class="mx-auto max-w-7xl px-4 py-12 lg:px-8">
 	<div class="sm:mx-auto sm:w-full sm:max-w-sm mb-8">
 		<img
 			class="mx-auto h-12 w-auto text-orange-400"
@@ -52,12 +55,27 @@
 			src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0Ij48cGF0aCBkPSJNMTIuNzI5IDE1LjQxNWMuNTA4IDAgMS4zMDMuMzcyIDEuNjk1LjYzOWwtMi4xMzEtNS40MTNjLS40NjQtMS4xNzcgMS4zMDEtMS44MjggMS43NS0uNjg4bDEuNDQzIDMuNjYxYy4xNjcuNDI0LjgwOC4xNzMuNjQxLS4yNTJsLS4zNTUtLjkwM2MuMzE1LS4wMDEuNzUxLS4wNTUgMS4wNTUuMDIxLjE5Ny4wNDkuMzU0LjE1MS40MzQuMzU4bC4yOTIuNzRjLjE2Ni40MjIuODA1LjE3MS42NDEtLjI1MmwtLjMzNy0uODU1Yy40MjYtLjAxNy43My0uMDMgMS4wMS4wNC4xOTkuMDUuMzYuMTUzLjQ0MS4zNjFsLjI0OC42MjhjLjE2Mi40MjUuODA1LjE3NC42NDEtLjI1MWwtLjI3OS0uNzA1Yy4yMzYuMDE2LjQ0Mi4wMzYuNjI3LjA4Mi41MjMuMTMxLjg4NC40NjggMS4yOCAxLjQ3Ny43ODggMi4wMDEuMjA4IDIuODk2IDEuMDAxIDQuOTFsLTUuMjAxIDEuOTg3Yy0yLjA2NC0yLjUyMi00LjQ5NC0zLjI2OS01LjE0NC0zLjY4Mi0xLjI4My0uODItLjc2NS0xLjkwMy4yNDgtMS45MDN6bS0xLjI5MS01LjI2Yy0uMDU1LS43MDkuMzY5LTEuMzM4IDEuMDM5LTEuNjAyLjY1OS0uMjYyIDEuNDAzLS4wOTggMS44NTEuNDY0LS4wNS0xLjExOC0xLjE4NS0xLjg2NS0yLjI0LTEuNDUzLTEuMDUxLjQxNS0xLjM3NyAxLjczNy0uNjUgMi41OTF6bS0uMDg0IDMuNTE0bC0uMjYzLS42NjloLTkuMDkxdi04aDIwdjYuMDVjLjkwMi41NjQgMS4zNzEgMS40NzcgMS42ODUgMi4yNzEuMTM1LjM0MS4yMzQuNjU4LjMxNS45NTh2LTExLjI3OWgtMjR2MTJoMTAuMDA4Yy4yODQtLjU4My43NTMtMS4wNSAxLjM0Ni0xLjMzMXptLTQuMzU0LTQuNjY5YzAgLjU1Mi40NDcgMSAxIDFzMS0uNDQ4IDEtMS0uNDQ3LTEtMS0xLTEgLjQ0OC0xIDF6bS0zIDBjMCAuNTUyLjQ0NyAxIDEgMXMxLS40NDggMS0xLS40NDctMS0xLTEtMSAuNDQ4LTEgMXoiLz48L3N2Zz4="
 		/>
 
-		<h2 class="mt-2 text-center text-3xl font-extrabold  text-gray-900">
-			{projectName}
+		<h2 class="mt-2 text-center text-3xl font-extrabold  text-orange-500">
+			<span class="bg-gradient-to-r from-amber-500 via-orange-600 to-yellow-500 bg-clip-text text-transparent">
+				{projectName}
+			</span>
 		</h2>
+
 		<p class="mt-2 text-center text-base text-gray-600">
 			{projectDesc}
 		</p>
+
+		<div class="flex items-center justify-center mt-4 space-x-3">
+			<a href="https://github.com/multiplehats/svelte-auth-ui" rel="noopener noreferrer" target="_blank">
+				<Github class="w-6 h-6 text-black" />
+			</a>
+			<a href="https://twitter.com/itschrisjayden" rel="noopener noreferrer" target="_blank">
+				<Twitter class="w-6 h-6 text-black" />
+			</a>
+			<a href="https://www.npmjs.com/package/svelte-auth-ui" rel="noopener noreferrer" target="_blank">
+				<Npm class="w-10 h-10" />
+			</a>
+		</div>
 	</div>
 
 	<div class="lg:grid lg:grid-cols-12 lg:gap-x-8">
