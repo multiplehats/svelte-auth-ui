@@ -1,7 +1,7 @@
 {
 	"name": "svelte-auth-ui",
 	"description": "Save time and simplify authentication in Svelte with Svelte Auth UI",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "svelte-kit sync && svelte-package",
@@ -23,7 +23,6 @@
 		"@typescript-eslint/eslint-plugin": "^5.45.0",
 		"@typescript-eslint/parser": "^5.45.0",
 		"autoprefixer": "^10.4.13",
-		"clsx": "^1.2.1",
 		"eslint": "^8.28.0",
 		"eslint-config-prettier": "^8.5.0",
 		"eslint-plugin-svelte3": "^4.0.0",
@@ -33,9 +32,8 @@
 		"prettier-plugin-svelte": "^2.8.1",
 		"slugify": "^1.6.5",
 		"svelte-check": "^3.0.1",
-		"svelte-fa": "^3.0.3",
+		"svelte-french-toast": "^1.0.3",
 		"svelte-highlight": "^7.1.2",
-		"tailwind-merge": "^1.9.1",
 		"tailwindcss": "^3.2.6",
 		"tslib": "^2.4.1",
 		"typescript": "^4.9.3",
@@ -56,8 +54,9 @@
 		"svelte components"
 	],
 	"dependencies": {
+		"clsx": "^1.2.1",
 		"svelte": "^3.54.0",
-		"svelte-french-toast": "^1.0.3",
+		"tailwind-merge": "^1.9.1",
 		"zod": "^3.20.6"
 	}
 }

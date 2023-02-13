@@ -39,6 +39,8 @@ To install Svelte Auth UI, run the following command:
 
 ### Update your tailwind.config
 
+Make sure you add `'./node_modules/svelte-auth-ui/**/*.{html,js,svelte,ts}'` to your Tailwind config.
+
 ```js
 const config = {
 	content: [

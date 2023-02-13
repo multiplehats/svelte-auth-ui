@@ -19,7 +19,6 @@ specifiers:
   slugify: ^1.6.5
   svelte: ^3.54.0
   svelte-check: ^3.0.1
-  svelte-fa: ^3.0.3
   svelte-french-toast: ^1.0.3
   svelte-highlight: ^7.1.2
   tailwind-merge: ^1.9.1
@@ -31,8 +30,9 @@ specifiers:
   zod: ^3.20.6
 
 dependencies:
+  clsx: 1.2.1
   svelte: 3.55.1
-  svelte-french-toast: 1.0.3_svelte@3.55.1
+  tailwind-merge: 1.9.1
   zod: 3.20.6
 
 devDependencies:
@@ -43,7 +43,6 @@ devDependencies:
   '@typescript-eslint/eslint-plugin': 5.51.0_z4swst3wuuqk4hlme4ajzslgh4
   '@typescript-eslint/parser': 5.51.0_7kw3g6rralp5ps6mg3uyzz6azm
   autoprefixer: 10.4.13_postcss@8.4.21
-  clsx: 1.2.1
   eslint: 8.34.0
   eslint-config-prettier: 8.6.0_eslint@8.34.0
   eslint-plugin-svelte3: 4.0.0_dbthnr4b2bdkhyiebwn7su3hnq
@@ -53,9 +52,8 @@ devDependencies:
   prettier-plugin-svelte: 2.9.0_jrsxveqmsx2uadbqiuq74wlc4u
   slugify: 1.6.5
   svelte-check: 3.0.3_pehl75e5jsy22vp33udjja4soi
-  svelte-fa: 3.0.3
+  svelte-french-toast: 1.0.3_svelte@3.55.1
   svelte-highlight: 7.1.2
-  tailwind-merge: 1.9.1
   tailwindcss: 3.2.6_postcss@8.4.21
   tslib: 2.5.0
   typescript: 4.9.5
@@ -753,7 +751,7 @@ packages:
   /clsx/1.2.1:
     resolution: {integrity: sha512-EcR6r5a8bj6pu3ycsa/E/cKVGuTgZJZdsyUYHOksG/UHIiKfjxzRxYJpyVBwYaQeOvghal9fcc4PidlgzugAQg==}
     engines: {node: '>=6'}
-    dev: true
+    dev: false
 
   /color-convert/2.0.1:
     resolution: {integrity: sha512-RRECPsj7iu/xb5oKYcsFHSppFNnsj/52OVTRKb4zP5onXwVF3zVmmToNcOfGC+CRDpfK/U584fMg38ZHCaElKQ==}
@@ -1844,17 +1842,13 @@ packages:
       - sugarss
     dev: true
 
-  /svelte-fa/3.0.3:
-    resolution: {integrity: sha512-GIikJjcVCD+5Y/x9hZc2R4gvuA0gVftacuWu1a+zVQWSFjFYZ+hhU825x+QNs2slsppfrgmFiUyU9Sz9gj4Rdw==}
-    dev: true
-
   /svelte-french-toast/1.0.3_svelte@3.55.1:
     resolution: {integrity: sha512-HBdutlqUx5FroucvcmMJstmTJDedXayiOSXubBYW6iL5x1PdHp+bOflGx5NxsOa6+EQckJnnVv1vJYgGsg7ngQ==}
     dependencies:
       svelte-writable-derived: 2.1.6_svelte@3.55.1
     transitivePeerDependencies:
       - svelte
-    dev: false
+    dev: true
 
   /svelte-highlight/7.1.2:
     resolution: {integrity: sha512-GNagc6nAPP5S8efOHA2J15Pz/ook1UkOpu7xfsg8uW09RpaWCsMbAxppZqauD8syAjZgpvNEl5msNNrOltQZzA==}
@@ -1926,7 +1920,7 @@ packages:
       svelte: ^3.2.1
     dependencies:
       svelte: 3.55.1
-    dev: false
+    dev: true
 
   /svelte/3.55.1:
     resolution: {integrity: sha512-S+87/P0Ve67HxKkEV23iCdAh/SX1xiSfjF1HOglno/YTbSTW7RniICMCofWGdJJbdjw3S+0PfFb1JtGfTXE0oQ==}
@@ -1946,7 +1940,7 @@ packages:
 
   /tailwind-merge/1.9.1:
     resolution: {integrity: sha512-ED9MkiUHlmfh58EC1xHRqXcH1IQyRtmDP0AmXlugYkP2tvfu7ejtjFEHJLJt93mQ7ZJkcqSIgm9M394bq5vOJg==}
-    dev: true
+    dev: false
 
   /tailwindcss/3.2.6_postcss@8.4.21:
     resolution: {integrity: sha512-BfgQWZrtqowOQMC2bwaSNe7xcIjdDEgixWGYOd6AL0CbKHJlvhfdbINeAW76l1sO+1ov/MJ93ODJ9yluRituIw==}
