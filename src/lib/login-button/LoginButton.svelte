@@ -58,12 +58,12 @@
 
 <button
 	type="button"
+	{...$$restProps}
 	class={cn(
 		'inline-flex items-center bg-white justify-center font-semibold tracking-wide h-12 rounded-full text-center text-gray-700 border border-gray-200 px-4 py-2 transition duration-30 text-sm sm:text-base hover:border-gray-300 focus:bg-gray-50 active:bg-gray-100 outline-none focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2',
 		loading || disabled ? busyClass : '',
-		$$restProps.class
+		$$props.class
 	)}
-	{...$$restProps}
 	disabled={disabled || loading}
 	on:click
 	on:change
