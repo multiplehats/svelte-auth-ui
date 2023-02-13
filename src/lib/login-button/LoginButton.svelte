@@ -87,6 +87,6 @@
 	{/if}
 
 	{#if label !== null}
-		{label ? label : mappedLabel}
+		<span class="select-none">{label ? label : mappedLabel}</span>
 	{/if}
 </button>
