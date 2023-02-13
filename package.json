@@ -1,7 +1,7 @@
 {
 	"name": "svelte-auth-ui",
 	"description": "Save time and simplify authentication in Svelte with Svelte Auth UI",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"scripts": {
 		"dev": "vite dev",
 		"build": "svelte-kit sync && svelte-package",
