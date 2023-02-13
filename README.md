@@ -2,7 +2,7 @@
 
 Svelte Auth UI is a set of authentication components for [Svelte](https://svelte.dev/). These components are designed to simplify implementing authentication in your Svelte app.
 
-![hero](static/og.webp)
+![hero](https://github.com/multiplehats/svelte-auth-ui/raw/main/static/og.webp)
 
 Add social login buttons for popular services like Twitter, Facebook, and Google with just a few lines of code.
 
