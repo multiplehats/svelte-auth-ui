@@ -13,7 +13,7 @@ Overriding components with your own Tailwind classes is as easy as adding a clas
 ## Roadmap
 
 > **Warning**
-> This is work in progress. You can follow the progress on Twitter [@itschrisjayden](https://twitter.com/itschrisjayden.
+> This is work in progress. You can follow the progress on Twitter [@itschrisjayden](https://twitter.com/itschrisjayden).
 
 ### Login button
 

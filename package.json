@@ -43,6 +43,18 @@
 		"vite-tsconfig-paths": "^4.0.5"
 	},
 	"type": "module",
+	"keywords": [
+		"svelte",
+		"sveltekit",
+		"lucia auth",
+		"authentication",
+		"@auth",
+		"next auth",
+		"authjs",
+		"components",
+		"social login",
+		"svelte components"
+	],
 	"dependencies": {
 		"svelte": "^3.54.0",
 		"svelte-french-toast": "^1.0.3",
