@@ -64,7 +64,7 @@ module.exports = config;
 <LoginButton provider="google" />
 ```
 
-Please refer to the docs to see all the available props.
+Please refer to the [docs](svelte-auth-ui.vercel.app) to see all the available props.
 
 ## License
 
