@@ -32,7 +32,6 @@
 		"prettier": "^2.8.0",
 		"prettier-plugin-svelte": "^2.8.1",
 		"slugify": "^1.6.5",
-		"svelte": "^3.54.0",
 		"svelte-check": "^3.0.1",
 		"svelte-fa": "^3.0.3",
 		"svelte-highlight": "^7.1.2",
@@ -45,6 +44,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"svelte": "^3.54.0",
 		"svelte-french-toast": "^1.0.3",
 		"zod": "^3.20.6"
 	}

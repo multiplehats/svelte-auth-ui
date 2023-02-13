@@ -31,6 +31,7 @@ specifiers:
   zod: ^3.20.6
 
 dependencies:
+  svelte: 3.55.1
   svelte-french-toast: 1.0.3_svelte@3.55.1
   zod: 3.20.6
 
@@ -51,7 +52,6 @@ devDependencies:
   prettier: 2.8.4
   prettier-plugin-svelte: 2.9.0_jrsxveqmsx2uadbqiuq74wlc4u
   slugify: 1.6.5
-  svelte: 3.55.1
   svelte-check: 3.0.3_pehl75e5jsy22vp33udjja4soi
   svelte-fa: 3.0.3
   svelte-highlight: 7.1.2
